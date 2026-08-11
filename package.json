@@ -1,0 +1,38 @@
+{
+  "name": "fullstack-javascript-claude-ai",
+  "version": "1.0.0",
+  "description": "Full-Stack JavaScript Application with Node.js, Express, SQLite CRUD, Claude AI Streaming SDK, and modern Vite UI",
+  "main": "server/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server/index.js",
+    "server": "node --watch server/index.js",
+    "client": "vite --config client/vite.config.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\" --names \"SERVER,CLIENT\" --prefix-colors \"blue.bold,magenta.bold\"",
+    "build": "vite build --config client/vite.config.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.27.0",
+    "better-sqlite3": "^11.8.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "vite": "^6.0.7"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs",
+    "express",
+    "sqlite",
+    "claude-ai",
+    "anthropic",
+    "fullstack",
+    "vite"
+  ],
+  "author": "",
+  "license": "MIT"
+}
